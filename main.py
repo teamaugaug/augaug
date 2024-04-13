@@ -285,7 +285,7 @@ class CameraApp(ctk.CTk):
         image_count = len(glob.glob(os.path.join(folder_path, "*.png")))
         self.num_images.configure(text=f"Images: {image_count}")
 
-        if image_count >= 20:
+        if image_count >= 50:
             self.capture_button.configure(state='disabled')
         else:
             self.capture_button.configure(state='normal')
